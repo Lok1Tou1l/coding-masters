@@ -21,10 +21,10 @@ export default function TabsDemo() {
   return (
     <Tabs defaultValue="account" className="w-[400px] mx-auto">
       <TabsContent value="account">
-        <Card>
-          <CardHeader>
-            <CardTitle>Account</CardTitle>
-            <CardDescription>
+        <Card className="bg-green-200">
+          <CardHeader className="bg-green-500">
+            <CardTitle className="text-white">Account</CardTitle>
+            <CardDescription className="text-white">
               Login to your account and start using our services
             </CardDescription>
           </CardHeader>
@@ -38,8 +38,8 @@ export default function TabsDemo() {
               <Input id="password" defaultValue="password" />
             </div>
           </CardContent>
-          <CardFooter>
-            <Button>Sign in</Button>
+          <CardFooter className="bg-green-500">
+            <Button className="bg-green-700 text-white">Sign in</Button>
           </CardFooter>
         </Card>
       </TabsContent>
