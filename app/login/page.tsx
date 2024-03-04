@@ -19,35 +19,6 @@ import {
 
 export default function TabsDemo() {
   return (
-<<<<<<< HEAD
     
   );
-=======
-    <Tabs defaultValue="account" className="w-[400px] mx-auto">
-      <TabsContent value="account">
-        <Card className="bg-green-200">
-          <CardHeader className="bg-green-500">
-            <CardTitle className="text-white">Account</CardTitle>
-            <CardDescription className="text-white">
-              Login to your account and start using our services
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="name">Matricule Uni</Label>
-              <Input id="matricule" defaultValue="matricule universitaire" />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="username">Password</Label>
-              <Input id="password" defaultValue="password" />
-            </div>
-          </CardContent>
-          <CardFooter className="bg-green-500">
-            <Button className="bg-green-700 text-white">Sign in</Button>
-          </CardFooter>
-        </Card>
-      </TabsContent>
-    </Tabs>
-  )
->>>>>>> 66a076fad7082d182ade81bb37a21df43a1d7492
 }
