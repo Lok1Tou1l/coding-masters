@@ -27,6 +27,10 @@ export default function TabsDemo() {
   }
 
   return (
+<<<<<<< HEAD
+    
+  );
+=======
     <Tabs defaultValue="account" className="w-[400px] mx-auto">
       <TabsContent value="account">
         <Card className="bg-green-200">
@@ -55,4 +59,5 @@ export default function TabsDemo() {
       </TabsContent>
     </Tabs>
   )
+>>>>>>> 66a076fad7082d182ade81bb37a21df43a1d7492
 }
