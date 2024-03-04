@@ -1,4 +1,5 @@
 import React from "react"
+import { useHistory } from "react-router"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -18,6 +19,13 @@ import {
 } from "@/components/ui/tabs"
 
 export default function TabsDemo() {
+  const history = useHistory()
+
+  const handleSignIn = () => {
+    // Navigate to the home page
+    history.push("/home")
+  }
+
   return (
     <Tabs defaultValue="account" className="w-[400px] mx-auto">
       <TabsContent value="account">
@@ -39,7 +47,9 @@ export default function TabsDemo() {
             </div>
           </CardContent>
           <CardFooter className="bg-green-500">
-            <Button className="bg-green-700 text-white">Sign in</Button>
+            <Button className="bg-green-700 text-white" onClick={handleSignIn}>
+              Sign in
+            </Button>
           </CardFooter>
         </Card>
       </TabsContent>
